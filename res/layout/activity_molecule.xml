@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.stoapps.innovativeinformatica.MoleculeActivity" >
+    
+    <TextView 
+        android:id="@+id/txtDockACompound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A82400"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:text="@string/title_dock_compound"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        />
+    
+    <ScrollView 
+        android:id="@+id/scrMolecule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDockACompound"
+        android:layout_margin="10dp"
+        >
+        
+        <RelativeLayout 
+            android:id="@+id/relInScrMolecule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <EditText 
+        android:id="@+id/edtProjectTitle"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="@string/title_project"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        />
+            
+            <com.stoapps.myspinner.CustomSpinner 
+                android:id="@+id/spinnerProtienBrowse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/edtProjectTitle"
+                />
+    
+    <EditText 
+        android:id="@+id/edtProtien"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="@string/txtProtien"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/spinnerProtienBrowse"
+        android:layout_margin="10dp"
+        android:layout_below="@id/edtProjectTitle"
+        />
+    
+    <com.stoapps.myspinner.CustomSpinner 
+        android:id="@+id/spinnerMoleculeDb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/edtProtien"
+        android:layout_alignParentRight="true"
+        />
+    
+    <EditText 
+        android:id="@+id/edtLigand"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="@string/txtLigand"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/spinnerMoleculeDb"
+        android:layout_margin="10dp"
+        android:layout_below="@id/edtProtien"
+        android:layout_alignBaseline="@id/spinnerMoleculeDb"
+        />
+    
+    <EditText 
+        android:id="@+id/edtUserNameMolecule"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="@string/txt_name"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/edtLigand"
+        />
+    
+    <EditText 
+        android:id="@+id/edtInstituteName"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="@string/edt_institue"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/edtUserNameMolecule"
+        />
+    
+    <EditText 
+        android:id="@+id/edtEmailIDMol"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="@string/txtEmail"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/edtInstituteName"
+        />
+    
+    <EditText 
+        android:id="@+id/edtPhoneNumber"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="@string/edt_phone"
+        android:inputType="number"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/edtEmailIDMol"
+        />
+    
+    <EditText 
+        android:id="@+id/edtPurpose"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="@string/edt_purpose"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/edtPhoneNumber"
+        />
+    
+    <Button 
+        android:id="@+id/btnSubmitMolecule"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/custombutton"
+        android:text="@string/btn_submit"
+        android:layout_below="@id/edtPurpose"
+        />
+    
+    <TextView 
+        android:id="@+id/txtNote"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/btnSubmitMolecule"
+        android:text="@string/txt_note"
+        />
+            
+        </RelativeLayout>
+        
+    </ScrollView>
+
+	    
+
+</RelativeLayout>

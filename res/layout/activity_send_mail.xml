@@ -1,0 +1,421 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.stoapps.innovativeinformatica.SendMailActivity" >
+    
+    <TextView 
+        android:id="@+id/txtContactUS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A82400"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:text="@string/title_contact"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        />
+    
+    <ScrollView 
+        android:id="@+id/scrContact"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtContactUS"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent">
+        
+        <RelativeLayout 
+            android:id="@+id/relContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            
+            <TextView 
+        android:id="@+id/txtContactDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="@string/contact_info"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        />
+     
+      <EditText 
+        android:id="@+id/edtMailID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/edtEmailHint"
+       	android:maxLength="50"
+       	android:singleLine="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/txtContactDesc"
+        />
+    
+    <EditText 
+        android:id="@+id/edtSubject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/edtEmailSub"
+        android:layout_margin="10dp"
+        android:maxLength="100"
+       	android:singleLine="true"
+        android:layout_below="@id/edtMailID"
+        />
+    
+    <EditText
+        android:id="@+id/edtMail"
+        android:layout_width="match_parent"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_message"
+        android:layout_margin="10dp"
+        android:maxLength="250"
+        android:maxLines="3"
+        android:layout_below="@id/edtSubject"
+        />
+    
+    <Button 
+        android:id="@+id/btnSend"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/custombutton"
+        android:layout_below="@id/edtMail"
+        android:text="@string/btnSend"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <ImageView 
+        android:id="@+id/imgPinpoint"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btnSend"
+        android:layout_margin="10dp"
+        android:src="@drawable/pinpoint"
+        />
+    
+    <TextView 
+        android:id="@+id/txtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="@string/address"
+        android:layout_toRightOf="@id/imgPinpoint"
+        android:layout_below="@id/btnSend"
+        android:layout_margin="10dp"
+        />
+    
+    <ImageView 
+        android:id="@+id/imgPhone"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtAddress"
+        android:layout_margin="10dp"
+        android:src="@drawable/phone"
+        />
+    
+    <TextView 
+        android:id="@+id/txtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="@string/phone_number"
+        android:layout_toRightOf="@id/imgPhone"
+        android:layout_below="@id/txtAddress"
+        android:layout_margin="10dp"
+        />
+    
+    <ImageView 
+        android:id="@+id/imgSendMail"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtPhone"
+        android:layout_margin="10dp"
+        android:src="@drawable/email"
+        />
+        
+        <TextView 
+        android:id="@+id/txtSendEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="@string/email_id"
+        android:layout_below="@id/txtPhone"
+        android:layout_toRightOf="@id/imgSendMail"
+        android:layout_margin="10dp"
+        />
+        
+        <ImageView 
+        android:id="@+id/imgWebAddress"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtSendEmail"
+        android:layout_margin="10dp"
+        android:src="@drawable/web"
+        />
+        
+        <TextView 
+        android:id="@+id/txtWebAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="@string/web_address"
+        android:layout_below="@id/txtSendEmail"
+        android:layout_toRightOf="@id/imgWebAddress"
+        android:layout_margin="10dp"
+        />
+        
+        <RelativeLayout 
+            android:id="@+id/lnrLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_below="@id/txtWebAddress">
+            
+            <ImageView 
+            android:id="@+id/imgGooglePlus"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/google_plus_small"
+            android:contentDescription="@string/app_name"
+            />
+            
+            <ImageView 
+            android:id="@+id/imgFacebook"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@id/imgGooglePlus"
+            android:layout_alignBaseline="@id/imgGooglePlus"
+            android:layout_centerInParent="true"
+            android:src="@drawable/facebook_smal"
+            android:contentDescription="@string/app_name"
+            />
+            
+            <ImageView 
+            android:id="@+id/imgLinkedIn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/imgGooglePlus"
+            android:layout_alignBaseline="@id/imgGooglePlus"
+            android:layout_centerInParent="true"
+            android:src="@drawable/linkedin_small"
+            android:contentDescription="@string/app_name"
+            />
+            
+        </RelativeLayout> 
+            
+            
+        </RelativeLayout>
+        
+         
+        
+    </ScrollView>
+    
+     <!-- <TextView 
+        android:id="@+id/txtContactDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="@string/contact_info"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/txtContactUS"
+        />
+     
+      <EditText 
+        android:id="@+id/edtMailID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/edtEmailHint"
+       	android:maxLength="50"
+       	android:singleLine="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/txtContactDesc"
+        />
+    
+    <EditText 
+        android:id="@+id/edtSubject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/edtEmailSub"
+        android:layout_margin="10dp"
+        android:maxLength="100"
+       	android:singleLine="true"
+        android:layout_below="@id/edtMailID"
+        />
+    
+    <EditText
+        android:id="@+id/edtMail"
+        android:layout_width="match_parent"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content"
+        android:hint="@string/edtEmail"
+        android:layout_margin="10dp"
+        android:maxLength="250"
+        android:maxLines="3"
+        android:layout_below="@id/edtSubject"
+        />
+    
+    <Button 
+        android:id="@+id/btnSend"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/edtMail"
+        android:text="@string/btnSend"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <ImageView 
+        android:id="@+id/imgPinpoint"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btnSend"
+        android:layout_margin="10dp"
+        android:src="@drawable/pinpoint"
+        />
+    
+    <TextView 
+        android:id="@+id/txtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="@string/address"
+        android:layout_toRightOf="@id/imgPinpoint"
+        android:layout_below="@id/btnSend"
+        android:layout_margin="10dp"
+        />
+    
+    <ImageView 
+        android:id="@+id/imgPhone"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtAddress"
+        android:layout_margin="10dp"
+        android:src="@drawable/phone"
+        />
+    
+    <TextView 
+        android:id="@+id/txtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="@string/phone_number"
+        android:layout_toRightOf="@id/imgPhone"
+        android:layout_below="@id/txtAddress"
+        android:layout_margin="10dp"
+        />
+    
+    <ImageView 
+        android:id="@+id/imgSendMail"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtPhone"
+        android:layout_margin="10dp"
+        android:src="@drawable/email"
+        />
+        
+        <TextView 
+        android:id="@+id/txtSendEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="@string/email_id"
+        android:layout_below="@id/txtPhone"
+        android:layout_toRightOf="@id/imgSendMail"
+        android:layout_margin="10dp"
+        />
+        
+        <ImageView 
+        android:id="@+id/imgWebAddress"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtSendEmail"
+        android:layout_margin="10dp"
+        android:src="@drawable/web"
+        />
+        
+        <TextView 
+        android:id="@+id/txtWebAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="@string/web_address"
+        android:layout_below="@id/txtSendEmail"
+        android:layout_toRightOf="@id/imgWebAddress"
+        android:layout_margin="10dp"
+        />
+        
+        <RelativeLayout 
+            android:id="@+id/lnrLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true">
+            
+            <ImageView 
+            android:id="@+id/imgGooglePlus"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/google_plus_small"
+            android:contentDescription="@string/app_name"
+            />
+            
+            <ImageView 
+            android:id="@+id/imgFacebook"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@id/imgGooglePlus"
+            android:layout_alignBaseline="@id/imgGooglePlus"
+            android:layout_centerInParent="true"
+            android:src="@drawable/facebook_smal"
+            android:contentDescription="@string/app_name"
+            />
+            
+            <ImageView 
+            android:id="@+id/imgLinkedIn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/imgGooglePlus"
+            android:layout_alignBaseline="@id/imgGooglePlus"
+            android:layout_centerInParent="true"
+            android:src="@drawable/linkedin_small"
+            android:contentDescription="@string/app_name"
+            />
+            
+        </RelativeLayout> -->
+        
+        
+</RelativeLayout>

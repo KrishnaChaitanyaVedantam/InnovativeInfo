@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.stoapps.innovativeinformatica.TechnologyActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+	
+        <LinearLayout 
+            android:id="@+id/relInsideScrTech"
+            android:orientation="vertical"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+            
+            <ImageView 
+        android:id="@+id/imgVirtualScreening"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/virtual_screening"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="5dp"
+        />
+            
+            <WebView 
+            android:id="@+id/webViewVirtualScreening"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            />
+            
+            <ImageView 
+        android:id="@+id/imgMolecularDocking"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/molecular_docking"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="5dp"
+        />
+            
+            <WebView 
+            android:id="@+id/webViewMolecularDocking"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            />
+            
+            <ImageView 
+        android:id="@+id/imgProtien"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/protein_protein_interactions"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="5dp"
+        />
+            
+            <WebView 
+            android:id="@+id/webViewProtien"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            />
+            
+            <ImageView 
+        android:id="@+id/imgFreeEnergy"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/free_energy_calculations"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="5dp"
+        />
+            
+            <WebView 
+            android:id="@+id/webViewFreeEnergy"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            />
+            
+            <ImageView 
+        android:id="@+id/imgMoleculeDynamic"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/molecular_dynamic_simulations"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="5dp"
+        />
+            
+            <WebView 
+            android:id="@+id/webViewMoleculeDynamic"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            />
+            
+            <ImageView 
+        android:id="@+id/imgHomology"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/homology_modeling"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="5dp"
+        />
+            
+            <WebView 
+            android:id="@+id/webViewHomology"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            />
+            
+             <ImageView 
+        android:id="@+id/imgAdmet"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/admet"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="5dp"
+        />
+            
+            <WebView 
+            android:id="@+id/webViewAdmet"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

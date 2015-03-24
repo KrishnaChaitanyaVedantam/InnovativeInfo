@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="txt_abt_us">Innovative Informatica Technologies is one of its 
+        kind Bioinformatics organization specialized in handling computer 
+        aided drug discovery research, We provide Research and Development 
+        services and research oriented training in the area of structure and ligand 
+        based drug discovery, screening of large chemical space for potential lead 
+        molecules through virtual screening, docking, ADMET predictions and 
+        molecular dynamic simulation techniques. We provide academic project 
+        training in Chemo-informatics area to various participants ranging from 
+        life science students, academic faculty to industrial researchers.</string>
+    <string name="txt_our_mission">The mission of our Innovative Informatica Technologies 
+        is to train next generation researchers in bioinformatics and computational biology 
+        in both academia and industry by capitalizing on the efficiency of 
+        technology to serve and help young research career aspirants achieve their 
+        goals in computer aided drug discovery research domain through our 
+        efficient management and team.</string>
+    <string name="txt_our_vision">To establish and maintain collaborations with 
+        Laboratories and institutes in India and abroad which are involved in 
+        related areas of research area of Bioinformatics and Computational Biology. 
+        We are determined to strive constantly to make Innovative Informatica 
+        Technologies a leading high quality service provider in Computer aided drug 
+        discovery research domain.</string>
+    <string name="text_virtual_screen">Virtual screening is a computational technique 
+        used in drug discovery
+research for screening of large chemical space for potential
+lead drug candidates towards a known drug target, typically
+an enzyme or a protein receptor. As the accuracy and correlation
+of this method of screening with experimental results is increased,
+the application of this technique is being highly appreciated in
+pharma industries towards screening enormous chemical space of
+over 1060 small chemical compounds. Based on the available
+knowledge regarding potential drug target/ligand, structure/ligand
+based virtual screening will be implemented either individually or
+in combination for identifying potential lead drug like compounds.
+    </string>
+    <string name="text_molecular_docking">Docking is a method of predicting the most 
+        favorable binding
+mode between drug target and the given ligand molecule towards
+forming a stable complex. Orientation of the ligand
+molecule in the protein target has a major role to play in determining
+its association strength, which is also known as
+binding affinity. The strength of association and the orientation
+of the compound in the drug target determine the functioning
+of that particular compound as activator or inhibitor.
+This also plays key role off-target activity of the drug candidate
+which might lead to side effects. Hence, studying the
+various interactions involved in forming the binding complex
+in details is an unmatchable key step towards rational drug
+designing. </string>
+<string name="text_protien">Most of the biological functions depends upon the 
+    protein-protein
+interactions, especially signal transduction mechanisms, which is the
+core of the entire interactomics system of any living cell. Many disease
+pathways such as cancer, undesired protein-protein interactions
+are the key factors towards malfunctioning of the cells. Most of the
+anti cancer drugs have been identified by blocking the protein-protein
+interacting pathway. Hence, studying the network pathways involving
+many protein interactions is crucial towards finding novel drug
+targets and studying the protein-ligand interactions which can specifically
+target a particular protein-protein interaction is vital for novel
+drug discovery. </string>
+<string name="text_free_energy">Free energy calculation/perturbation is the most common
+method used in computational chemistry for conformational
+sampling of protein and ligand mutations in order to calculate
+the energy barriers required for transition between one state (A)
+to another state/conformation (B). Quantum mechanics/
+molecular mechanics (QM/MM) and Umbrella sampling are the
+two majorly employed methods for free energy calculations. </string>
+<string name="text_molecular_dynamic">
+    Molecular dynamic (MD) simulations is a method of
+predicting physical movements of atoms and molecules under
+given physiochemical conditions. MD is widely used in determining
+the thermodynamic properties of the given protein
+structure in complex with/without ligand in the presence of
+solvent at given pH, temperature and pressure. Through this
+method total potential energy of the given protein-ligand complex
+along with associated interaction energies can be calculated
+towards validating their association strength during the
+conformational changes. 
+</string>
+<string name="text_homology">
+    Homology modeling is a computational modeling technique used for
+generating high resolution hypothetical proteins by using the evolutionarily
+related protein structure information. This method is highly
+valuable when the structure of the protein target is not known. Presently
+available softwares allow us to build therapeutically important
+drug targets with high accuracy and correlation with experimentally
+determined protein structures. 
+</string>
+<string name="text_admet">Absorption, distribution, metabolism, exertion and 
+    toxicity (ADMET) properties determination is an essential criteria should be 
+    considered during the initial stages of rational dug designing and a valuable 
+    tool in short listing potential drug candidates out of lacks of compounds.</string>
+    <string name="txt_note">Note : This is a free service intended for academic purpose only.</string>
+    <string name="btn_submit">Submit</string>
+    <string name="edt_purpose">Briefly describe purpose of docking</string>
+    <string name="edt_phone">Phone number</string>
+    <string name="edt_institue">Type your Institute name here</string>
+    <string name="txt_name">Enter your name</string>
+    <string name="web_address">www.innovativeinformatica.org</string>
+    <string name="lightning">Natural Lightning</string>
+    <string name="color_baloons">Color Baloons</string>
+    <string name="natural_wall">Natural Wall</string>
+    <string name="app_name">Innovative\nInformaticaTechnology</string>
+    <string name="app_hname">Informatica</string>
+    <string name="txt_title">INNOVATIVE INFORMATICA TECHNOLOGIES</string>
+    <string name="org_desc">Computer Aided Drug Discovery</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="func_org">Research | Training | Consultants</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_send_mail">SendMailActivity</string>
+    <string name="txtEmail">Email ID</string>
+    <string name="edtEmailHint">Type your email id here</string>
+    <string name="edtEmailSub">Subject</string>
+    <string name="edtEmail">Type here</string>
+    <string name="btnSend">Send</string>
+    <string name="btnContact">Contact</string>
+    <string name="btn_dock">Dock</string>
+    <string name="title_activity_about_us">AboutUSActivity</string>
+    <string name="title_activity_molecule">MoleculeActivity</string>
+    <string name="txtProtien">PDB ID</string>
+    <string name="txtLigand">Ligand ID</string>
+    <string name="button_browse">Browse</string>
+    <string name="txt_ligand">Ligand</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_contact">CONTACT</string>
+    <string name="title_dock_compound">DOCK A COMPOUND</string>
+    <string name="phone_number">+91 9177247605</string>
+    <string name="email_id">info@innovativeinformatica.org,
+consultinnovativeinformatica@gmail.com</string>
+    <string name="btn_about">About Us</string>
+    <string name="btn_tech">Technology</string>
+    <string name="address"># 3-201, HIG, HUDA, Mayuri Nagar, Miyapur, Hyderabad - 500049, INDIA.</string>
+    <string name="contact_info">For collaboration/partnership/ services/training/feedback, we would like to hear your thoughts:</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_web">WebActivity</string>
+    <string name="title_project">Enter a title for your project</string>
+    <string name="title_activity_technology">TechnologyActivity</string>
+    <string name="type_message">Type your message here</string>
+
+</resources>

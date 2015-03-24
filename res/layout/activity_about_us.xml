@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    tools:context="com.stoapps.innovativeinformatica.AboutUSActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+	
+        <LinearLayout 
+            android:id="@+id/relInsideScr"
+            android:orientation="vertical"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+            
+            <ImageView 
+        android:id="@+id/imgAbtUs"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/about_us"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="5dp"
+        />
+            
+            <WebView 
+            android:id="@+id/webViewAbtUS"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            />
+            
+            <ImageView 
+        android:id="@+id/imgOurMission"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/our_mission"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="5dp"
+        />
+            
+            <WebView 
+            android:id="@+id/webViewOurMission"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            />
+            
+            <ImageView 
+        android:id="@+id/imgOurVision"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/our_vision"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="5dp"
+        />
+            
+            <WebView 
+            android:id="@+id/webViewOurVision"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            />
+            
+        </LinearLayout>
+        
+        
+       
+    </ScrollView>
+</RelativeLayout>
